@@ -1,29 +1,25 @@
-# 青科大美术馆｜V9 完整交互体验与可编辑画板
+# 青科大美术馆｜原生交互图、可编辑画板与完整演示
 
-## 希望交互和 V9 HTML 一样
+## 在 Figma 画布里查看、编辑与播放原型图
 
-[下载 V9 完整交互体验插件（约 1.7 MB）](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-v9-full-interaction.zip)
+[下载原生原型交互图插件（约 207 KB）](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-native-prototype-map-v4.zip)
 
-导入包内 manifest.json，运行 **青科大美术馆 · V9完整交互体验**，会直接打开手机应用窗口。**在插件窗口内操作，不是原生 ▶ Present。**
+在已有手机画板所在的 Page 导入 manifest.json，运行 **青科大美术馆 · 原生原型交互图**。
 
-本插件直接使用 V9 的同一份 HTML/JavaScript：导航、筛选、收藏与计数、预约与记录、报名、搜索输入、校园滑动、本地图片导入、HTML 导出等逻辑保留。没有创建或修改任何画板，不触发 Starter 三页限制。
+会在画布右侧生成可编辑的总览、24 个可点击节点和可见流程线。节点连接到已有真实画板或弹层；保留原有手机按钮的 Prototype 动作。点击右上角 Present，选择「原型图 / 总览与路径」或「原生应用 / 首页点击体验」。不打开插件演示窗口，不新建 Page。
 
-[完整说明](LIVE-DEMO.md) · [独立 HTML 原文件（保存后用浏览器打开）](prototype-v9.html)
+[安装及使用说明](PROTOTYPE-MAP.md) · [布局预览](native-prototype-map-preview.png)
 
-画板编辑不会自动同步到 HTML 窗口。原生 Figma Present 不能直接执行网页 JavaScript；若课程要求只用 Present，此插件窗口不替代该要求。
+尚无手机画板时，先导入 [原生可编辑版 v3.2](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-editable-v3.2.zip)，再运行原型图插件。
 
-## 编辑 Figma 图层与原型连线
+## 体验与 V9 HTML 相同的完整运行逻辑
 
-[下载原生可编辑点击版 v3.2](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-editable-v3.2.zip)
+[下载 V9 完整交互插件](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-v9-full-interaction.zip) · [说明](LIVE-DEMO.md)
 
-文字、图形、按钮和卡片可修改；原生 Prototype 用于预设页面/状态跳转，不能当作网页运行环境。
+直接运行 V9 原始脚本，交互在插件窗口中；原生 Present 使用预设页面/状态，不运行网页 JavaScript。两种表现层不自动同步，任意搜索输入、完整记录联动与文件处理在 V9 窗口或独立 HTML 中体验。
 
-[已有文件的导航修复小插件](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-navigation-fix-v3.2.zip) · [原生版说明](IMPORT-GUIDE.md)
+## 检查
 
-## 回归证据
+原生图插件通过 API 类型与模拟已有文件检查：24 个节点目标有效、100 个导航入口检查、既有画板位置和流程保留、createPage/showUI 调用均为 0。预览为布局渲染，不是真实 Figma 运行截图；实际导入后仍需核对 Present。[检查结果](MAP-VALIDATION.json)
 
-V9 原脚本逐一保留，在 Chromium 的 sandbox iframe 中完成 70 项检查，含真实输入、文件选择与下载，无 JavaScript 错误。入口通过官方 Plugin SDK 类型检查与窗口宿主模拟检查。没有直接连接真实 Figma 编辑器验收。
-
-[回归结果](LIVE-VALIDATION.json) · [浏览器状态预览 GIF](v9-live-preview.gif)
-
-本地演示不连接馆方真实业务系统；书法/园林为生成示意，真实校园照片待提供。本下载分支保留此前版本，不修改 main。
+V9 运行逻辑通过 70 项浏览器沙箱检查。此前版本的下载链接全部保留，本分支不修改 main。

@@ -1,0 +1,14 @@
+{
+  "result": "passed",
+  "scope": "official SDK typing and mocked native Figma graph creation; not a live editor test",
+  "native_canvas_map": true,
+  "clickable_map_nodes": 24,
+  "valid_native_destinations": true,
+  "original_20_phone_states_preserved": true,
+  "nav_buttons_rechecked": 100,
+  "visible_editable_vector_lines": true,
+  "new_present_flows": 6,
+  "existing_geometry_and_flows_preserved": true,
+  "create_page_calls": 0,
+  "show_ui_calls": 0
+}
