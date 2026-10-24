@@ -1,27 +1,29 @@
-# 青科大美术馆 · 点击与导航修复 v3.2
+# 青科大美术馆｜V9 完整交互体验与可编辑画板
 
-## 先确认演示方式
+## 希望交互和 V9 HTML 一样
 
-选择一个完整手机画板，再点右上角「分享」左边的 **▶ Present**。在打开的演示窗口里点击导航和卡片。
+[下载 V9 完整交互体验插件（约 1.7 MB）](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-v9-full-interaction.zip)
 
-Figma 右侧「原型」页签是编辑连线，编辑画布里的点击会选中图层。
+导入包内 manifest.json，运行 **青科大美术馆 · V9完整交互体验**，会直接打开手机应用窗口。**在插件窗口内操作，不是原生 ▶ Present。**
 
-## 已有文件，优先用小修复包
+本插件直接使用 V9 的同一份 HTML/JavaScript：导航、筛选、收藏与计数、预约与记录、报名、搜索输入、校园滑动、本地图片导入、HTML 导出等逻辑保留。没有创建或修改任何画板，不触发 Starter 三页限制。
 
-[下载原文件导航修复插件（约 5 KB）](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-navigation-fix-v3.2.zip)
+[完整说明](LIVE-DEMO.md) · [独立 HTML 原文件（保存后用浏览器打开）](prototype-v9.html)
 
-导入 manifest.json 后，在已有美术馆 Page 运行 **青科大美术馆 · 原文件导航修复**。它不会重新导入整套设计，修复五项导航，增加完整按钮点击表面，保证导航在滚动内容上方，并保留其他有效动作与几何布局。
+画板编辑不会自动同步到 HTML 窗口。原生 Figma Present 不能直接执行网页 JavaScript；若课程要求只用 Present，此插件窗口不替代该要求。
 
-[修复包详细使用说明](NAVIGATION-FIX.md)
+## 编辑 Figma 图层与原型连线
 
-## 重新导入完整版本
+[下载原生可编辑点击版 v3.2](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-editable-v3.2.zip)
 
-[下载完整可编辑点击增强版（约 14.5 MB）](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-editable-v3.2.zip)
+文字、图形、按钮和卡片可修改；原生 Prototype 用于预设页面/状态跳转，不能当作网页运行环境。
 
-运行 **青科大美术馆 · 全页面可点击编辑版 v3.2**。在当前 Page 的空白区域新增画板，不创建 Page，兼容 Starter 的三页上限。文字、矢量、按钮与卡片可编辑。
+[已有文件的导航修复小插件](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-navigation-fix-v3.2.zip) · [原生版说明](IMPORT-GUIDE.md)
 
-[完整使用说明](IMPORT-GUIDE.md) · [跳转清单](PROTOTYPE-LINKS.csv)
+## 回归证据
 
-已完成 API 类型及模拟现有文件修复检查，100 个导航入口目标正确，主动清除的导航连接恢复，已有图层位置保留。没有连接真实 Figma 编辑器验收；仍需在 Present 中核对。
+V9 原脚本逐一保留，在 Chromium 的 sandbox iframe 中完成 70 项检查，含真实输入、文件选择与下载，无 JavaScript 错误。入口通过官方 Plugin SDK 类型检查与窗口宿主模拟检查。没有直接连接真实 Figma 编辑器验收。
 
-原型不执行浏览器真实输入、上传/导出或后台业务。旧版本链接保留，通用安装包更新为 v3.2。
+[回归结果](LIVE-VALIDATION.json) · [浏览器状态预览 GIF](v9-live-preview.gif)
+
+本地演示不连接馆方真实业务系统；书法/园林为生成示意，真实校园照片待提供。本下载分支保留此前版本，不修改 main。
