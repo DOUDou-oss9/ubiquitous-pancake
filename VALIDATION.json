@@ -1,0 +1,21 @@
+{
+  "result": "passed",
+  "scope": "official API type check and simulated scene graph; no live Figma editor connection",
+  "created_nodes": 1688,
+  "pages": 20,
+  "panels": 112,
+  "click_navigation": 222,
+  "overlay_links": 121,
+  "booking_state_swaps": 483,
+  "smart_changes": 18,
+  "native_scroll_controls": 20,
+  "glass_layers": 4,
+  "glass_alpha": [
+    0.3137254901960784,
+    0.25098039215686274
+  ],
+  "background_blur": 1.3,
+  "fixed_glass_while_scrolling": true,
+  "source_svg_imports": 0,
+  "existing_pages_preserved": true
+}
