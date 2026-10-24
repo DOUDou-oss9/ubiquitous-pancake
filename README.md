@@ -1,25 +1,36 @@
-# 青科大美术馆｜原生交互图、可编辑画板与完整演示
+# 青科大美术馆｜原生交互图整合修正版 v4.1
 
-## 在 Figma 画布里查看、编辑与播放原型图
+[下载一次生成可编辑画板、原生交互与总览的整合修正版（约 14.5 MB）](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-native-integrated-v4.1.zip)
 
-[下载原生原型交互图插件（约 207 KB）](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-native-prototype-map-v4.zip)
+## 本次解决 Reaction destination rejected
 
-在已有手机画板所在的 Page 导入 manifest.json，运行 **青科大美术馆 · 原生原型交互图**。
+旧版把当前导航、分类或已选状态连回自身；Figma 不允许 NAVIGATE 指向来源所属的同一最外层画板。旧版只检查目标 ID，漏掉了这个规则，错误导致后续连线没能生成。
 
-会在画布右侧生成可编辑的总览、24 个可点击节点和可见流程线。节点连接到已有真实画板或弹层；保留原有手机按钮的 Prototype 动作。点击右上角 Present，选择「原型图 / 总览与路径」或「原生应用 / 首页点击体验」。不打开插件演示窗口，不新建 Page。
+本版按动作区分校验同页最外层目标、滚动目标和组件变体。当前选中项保持原位，不再写自跳转；单个目标异常会记录并跳过，不中断整个导入。
 
-[安装及使用说明](PROTOTYPE-MAP.md) · [布局预览](native-prototype-map-preview.png)
+## 使用
 
-尚无手机画板时，先导入 [原生可编辑版 v3.2](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-editable-v3.2.zip)，再运行原型图插件。
+1. 解压新版 ZIP，在 Figma 桌面端导入 manifest.json。
+2. 运行 **青科大美术馆 · 原生交互图整合修正版 v4.1**。
+3. 在当前 Page 的新区域一次生成全部画板、连线和总览；原有画板保留，不新建 Page。
+4. 点击 Present，选择 **v4.1 手机应用 / 首页** 或 **v4.1 总览 / 原型交互图**，避免进入旧的 Flow 1。
 
-## 体验与 V9 HTML 相同的完整运行逻辑
+[完整修复说明](NATIVE-INTEGRATED-FIX.md)
 
-[下载 V9 完整交互插件](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-v9-full-interaction.zip) · [说明](LIVE-DEMO.md)
+## 验证
 
-直接运行 V9 原始脚本，交互在插件窗口中；原生 Present 使用预设页面/状态，不运行网页 JavaScript。两种表现层不自动同步，任意搜索输入、完整记录联动与文件处理在 V9 窗口或独立 HTML 中体验。
+更严格的模拟检查先复现旧版同类错误，再验证新版本：20 个主状态、112 个面板状态、24 个总览节点均可到达；安全忽略 152 个重复/自指动作；无无效目标、无 API 拒绝；保留已有设计与流程，createPage 调用为 0。[检查结果](STRICT-REACTION-VALIDATION.json)
 
-## 检查
+当前没有真实 Figma 编辑器连接，导入后仍需实际核对。原生原型使用预设交互，不执行网页 JavaScript。
 
-原生图插件通过 API 类型与模拟已有文件检查：24 个节点目标有效、100 个导航入口检查、既有画板位置和流程保留、createPage/showUI 调用均为 0。预览为布局渲染，不是真实 Figma 运行截图；实际导入后仍需核对 Present。[检查结果](MAP-VALIDATION.json)
+## 已有完整画板，只修复总览
 
-V9 运行逻辑通过 70 项浏览器沙箱检查。此前版本的下载链接全部保留，本分支不修改 main。
+[原型图安全修复小包 v4.1](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-prototype-map-safe-v4.1.zip)
+
+如果旧版导入中途报错，建议使用上面的完整整合包，以恢复旧导入从未完成的连接。此前 v4 原型图下载地址也已同步为安全修复版本。
+
+## 完整 V9 运行体验
+
+[完整 V9 演示插件窗口](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-v9-full-interaction.zip) · [说明](LIVE-DEMO.md)
+
+它运行网页原脚本；原生画板可以编辑且有 Prototype 连线，但不承载任意搜索输入、文件操作和后台状态逻辑。两者不自动同步。本分支不修改 main。
