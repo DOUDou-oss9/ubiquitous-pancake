@@ -13,7 +13,9 @@
   "booking_state_changes": 483,
   "smart_changes": 18,
   "photo_image_layers": 40,
-  "flows": 4,
+  "flows_added": 4,
+  "new_page_api_calls": 0,
+  "starter_plan_with_three_pages_passed": true,
   "text_modification_check": true,
   "button_movement_preserves_links": true,
   "existing_pages_preserved": true
