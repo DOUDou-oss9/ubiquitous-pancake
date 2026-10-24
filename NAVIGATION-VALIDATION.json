@@ -1,0 +1,13 @@
+{
+  "result": "passed",
+  "scope": "official API type check and simulated existing-file repair; not a live editor test",
+  "nav_buttons_checked": 100,
+  "artificially_removed_links_restored": 34,
+  "all_20_states_have_five_valid_nav_targets": true,
+  "all_nav_buttons_have_full_frame_hit_surface": true,
+  "nav_layer_is_frontmost": true,
+  "existing_geometry_preserved": true,
+  "new_pages_created": 0,
+  "other_valid_actions_preserved": true,
+  "message": "已连接 100 个导航入口，检查 996 个原型动作。请点击右上角 ▶ Present，在演示窗口操作；编辑画布只会选中图层。"
+}

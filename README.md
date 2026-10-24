@@ -1,21 +1,27 @@
-# 青科大美术馆 · 免费版兼容可编辑交互 v3.1
+# 青科大美术馆 · 点击与导航修复 v3.2
 
-[点击下载 Starter 兼容安装包（ZIP，约 14.5 MB）](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-editable-v3.1.zip)
+## 先确认演示方式
 
-## 修复 Starter 三页上限报错
+选择一个完整手机画板，再点右上角「分享」左边的 **▶ Present**。在打开的演示窗口里点击导航和卡片。
 
-旧插件新建 Page 会触发 Starter 的每文件 3 页限制。本版不调用 createPage，直接在当前 Page 右侧放置画板，因此无需升级套餐。
+Figma 右侧「原型」页签是编辑连线，编辑画布里的点击会选中图层。
 
-保留当前页面名称、已有图层的位置与原型流程起点。会在已有内容之外留出间距，完成后自动定位。App 界面使用 Frame 承载，不需要多个 Page。
+## 已有文件，优先用小修复包
 
-## 使用
+[下载原文件导航修复插件（约 5 KB）](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-navigation-fix-v3.2.zip)
 
-1. 解压新版 ZIP，用 Figma 桌面端导入新版 manifest.json。
-2. 运行 **青科大美术馆 · 免费版兼容可编辑交互**。
-3. 使用右上角 Present，选择带「可编辑版 v3.1」的流程；编辑模式可以修改原生文字、图形、按钮和卡片。
+导入 manifest.json 后，在已有美术馆 Page 运行 **青科大美术馆 · 原文件导航修复**。它不会重新导入整套设计，修复五项导航，增加完整按钮点击表面，保证导航在滚动内容上方，并保留其他有效动作与几何布局。
+
+[修复包详细使用说明](NAVIGATION-FIX.md)
+
+## 重新导入完整版本
+
+[下载完整可编辑点击增强版（约 14.5 MB）](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-editable-v3.2.zip)
+
+运行 **青科大美术馆 · 全页面可点击编辑版 v3.2**。在当前 Page 的空白区域新增画板，不创建 Page，兼容 Starter 的三页上限。文字、矢量、按钮与卡片可编辑。
 
 [完整使用说明](IMPORT-GUIDE.md) · [跳转清单](PROTOTYPE-LINKS.csv)
 
-可编辑图层与交互能力延续 v3。已按官方 SDK 做类型检查，并在模拟“三页已满且 createPage 禁止”的环境通过结构检查，创建 Page 调用次数为 0；原有图层与流程保留。真实编辑器中的字体和排版仍需导入后核对。
+已完成 API 类型及模拟现有文件修复检查，100 个导航入口目标正确，主动清除的导航连接恢复，已有图层位置保留。没有连接真实 Figma 编辑器验收；仍需在 Present 中核对。
 
-版本历史下载链接保留，通用安装包同步为当前兼容版。本分支仅用于交付，不修改 main。
+原型不执行浏览器真实输入、上传/导出或后台业务。旧版本链接保留，通用安装包更新为 v3.2。

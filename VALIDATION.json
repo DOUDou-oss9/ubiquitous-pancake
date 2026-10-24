@@ -15,6 +15,7 @@
   "photo_image_layers": 40,
   "flows_added": 4,
   "new_page_api_calls": 0,
+  "all_clickable_frames_have_filled_hit_surface": true,
   "starter_plan_with_three_pages_passed": true,
   "text_modification_check": true,
   "button_movement_preserves_links": true,
