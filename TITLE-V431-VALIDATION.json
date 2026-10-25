@@ -1,0 +1,20 @@
+{
+  "result": "passed",
+  "scope": "official SDK types and stricter simulated Figma runtime rules; not a live editor test",
+  "old_self_navigation_error_reproduced": true,
+  "old_failure_message": "导入未完成：Error: Reaction at index 0 was invalid (destination 3 was rejected — destination must be a different top-level frame)。本次仅在当前页面增加图层，未删除既有内容。",
+  "native_page_states": 20,
+  "panel_states": 112,
+  "standalone_demo_and_map_removed": true,
+  "main_showcase_frames": 21,
+  "ios_status_bars": 21,
+  "all_states_reachable": true,
+  "self_actions_safely_ignored": 147,
+  "invalid_targets": 0,
+  "api_rejections": 0,
+  "nav_actions": 203,
+  "overlay_swaps": 355,
+  "component_changes": 0,
+  "create_page_calls": 0,
+  "existing_design_and_flows_preserved": true
+}

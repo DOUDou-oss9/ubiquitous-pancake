@@ -1,3 +1,11 @@
+## 大标题更正版 v4.3.1
+
+[下载插件包](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-title-v4.3.1.zip)
+
+指定文案改到大标题，原下方小字恢复。玻璃质感与交互保留。[安装说明](TITLE-V431-GUIDE.md)。
+
+---
+
 ## 文案与玻璃质感版 v4.3
 
 [下载新版插件包](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-glass-v4.3.zip)
