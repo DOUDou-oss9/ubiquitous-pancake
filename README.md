@@ -1,3 +1,11 @@
+## iOS精选展示版 v4.2
+
+[下载插件包](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-ios-focused-v4.2.zip)
+
+保留 21 个主要展示画板，使用可编辑 iOS 风格状态栏。移除独立动效演示和大幅总览；必要弹层集中在右侧辅助区。[安装与说明](IOS-FOCUSED-GUIDE.md)。
+
+---
+
 # 青科大美术馆｜原生交互图整合修正版 v4.1
 
 [下载一次生成可编辑画板、原生交互与总览的整合修正版（约 14.5 MB）](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-native-integrated-v4.1.zip)
