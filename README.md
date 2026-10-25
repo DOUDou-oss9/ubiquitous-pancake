@@ -1,3 +1,11 @@
+## 日常艺术版 v4.3.2
+
+[下载插件包](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-title-v4.3.2.zip)
+
+大标题更新为「把日常，看成艺术。」其余文案、玻璃效果与原生交互保留。[安装说明](TITLE-V432-GUIDE.md)。
+
+---
+
 ## 大标题更正版 v4.3.1
 
 [下载插件包](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-title-v4.3.1.zip)
