@@ -1,3 +1,11 @@
+## 文案与玻璃质感版 v4.3
+
+[下载新版插件包](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-glass-v4.3.zip)
+
+首页小字更新为「从校园出发，发现创作与生活的另一种可能。」展架玻璃增加模糊、高光与反光；保留原生编辑和交互。[安装说明](GLASS-V43-GUIDE.md)。
+
+---
+
 ## iOS精选展示版 v4.2
 
 [下载插件包](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/figma-prototype-download/figma-museum-ios-focused-v4.2.zip)
