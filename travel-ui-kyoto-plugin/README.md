@@ -1,9 +1,1 @@
-# Travel UI · Kyoto Prototype
-
-[点击下载 Figma 插件包](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/travel-ui-download-20261106/travel-ui-kyoto-figma-plugin.zip)
-
-下载后解压，在 Figma 中选择「插件 → 开发 → 从 manifest 导入插件」，选择解压目录里的 manifest.json，然后运行插件。
-
-插件会生成 7 个可编辑移动端画板和基础 Prototype 连线：首页、探索、社区、京都详情、Explore Collections、Kyoto Destination、Kiyomizu Detail。
-
-SHA-256: 28b6d7993afbc01d9a375aa83413c791c3ade5c02f120af738af2a63424fe394
+# Travel UI · Kyoto Prototype\n\n[点击下载带图片复用和交互的 Figma 插件包](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/travel-ui-download-20261106/travel-ui-kyoto-plugin/travel-ui-kyoto-figma-plugin-v4.zip)\n\n下载后解压，在 Figma 中选择「插件 → 开发 → 从 manifest 导入插件」，选择解压目录里的 manifest.json，然后运行插件。\n\n插件会生成 7 个可编辑移动端画板，并创建基础 Prototype 连线：首页、探索、社区、京都详情、Explore Collections、Kyoto Destination、Kiyomizu Detail。\n\n运行时会扫描当前 Page 的现有图片填充，并按目的地名称复用到新增画板；因此在原有 Travel UI 文件中运行时，原本的旅行图片会自动带入新页面。\n\nSHA-256: 55198f6b5b9d2d8e59aace18988ca9aae73d868fd65f3bdee9aa593e1d070e79\n
