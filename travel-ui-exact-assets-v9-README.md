@@ -1,0 +1,1 @@
+# Travel UI Exact Assets v9\n\n修复 Personal Plan 参数错误，确保 7 个页面和 Prototype 连线完整生成。\n\n[下载插件包](https://github.com/DOUDou-oss9/ubiquitous-pancake/raw/refs/heads/travel-ui-download-20261106/travel-ui-exact-assets-v9.zip)\n
